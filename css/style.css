@@ -216,7 +216,7 @@ span {
 }
 
 #hero h1 {
-  margin: 0 0 10px 0;
+  margin: 15px 0 10px 0;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
@@ -833,7 +833,8 @@ body.mobile-nav-active #mobile-nav-toggle i {
   }
 }
 
-@-webkit-keyframes pulsate2 {
+/* @-webkit-keyframes pulsate2 { */
+@keyframes pulsate2 {  
   0% {
     -webkit-transform: scale(0.1, 0.1);
     transform: scale(0.1, 0.1);
