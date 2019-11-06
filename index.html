@@ -24,6 +24,7 @@
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/modal-video/css/modal-video.min.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
@@ -61,6 +62,7 @@
             </ul>
           </li>
           <li><a href="#blog">Blog</a></li> -->
+          <li><a href="#screenshots">Gallery</a></li>          
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -70,11 +72,12 @@
   <!--==========================
     Hero Section
   ============================-->
+
   <section id="hero" class="wow fadeIn">
     <div class="hero-container">
+      <div class="title">TEAE TEAM</div>
       <h1>Chào mừng đến trang chủ của TEAE Team</h1>
-      <h2>Chúng tôi không chỉ là một nhóm, chúng tôi là một gia đình</h2>
-      <img src="img/hero-img.png" alt="Hero Imgs">
+      <p class="separator">Chúng tôi không chỉ là một nhóm, chúng tôi là một gia đình</p>
       <a href="#get-started" class="btn-get-started scrollto">Bắt đầu</a>
       <!-- <div class="btns">
         <a href="#"><i class="fa fa-apple fa-3x"></i> App Store</a>
@@ -83,7 +86,22 @@
       </div> -->
     </div>
   </section><!-- #hero -->
-
+  <script>
+    $(document).ready(function(){
+    var mouseX, mouseY;
+    var ww = $( window ).width();
+    var wh = $( window ).height();
+    var traX, traY;
+    $(document).mousemove(function(e){
+      mouseX = e.pageX;
+      mouseY = e.pageY;
+      traX = ((4 * mouseX) / 570) + 40;
+      traY = ((4 * mouseY) / 570) + 50;
+      $(".title").css({"background-position": traX + "%" + traY + "%"});
+    });
+  });
+  
+  </script>
   <!--==========================
     Get Started Section
   ============================-->
@@ -92,8 +110,8 @@
     <div class="container">
       <div class="section-title text-center">
 
-        <h2>Năng động, chuyên nghiệp và mới mẻ</h2>
-        <p class="separator">Chúng tôi luôn hướng đến những cái mới, những cái tích cực mà có thể giúp cho cuộc đời bạn vui lên, dễ dàng, thuận tiện hơn.</p>
+        <h2 style="-webkit-text-stroke: 1px white;"><b>Năng động, chuyên nghiệp và mới mẻ</b></h2>
+        <!-- <p style="-webkit-text-stroke: 1px white; text-shadow: 2px 2px 5px red;" class="separator">Chúng tôi luôn hướng đến những cái mới, những cái tích cực mà có thể giúp cho cuộc đời bạn vui lên, dễ dàng, thuận tiện hơn.</p> -->
 
       </div>
     </div>
@@ -263,8 +281,8 @@
 
     <div class="container">
       <div class="section-title text-center">
-        <h2>App Gallery</h2>
-        <p class="separator">Integer cursus bibendum augue ac cursus .</p>
+        <h2>Gallery</h2>
+        <p class="separator">Đây là album của bọn tớ.</p>
       </div>
     </div>
 
@@ -272,11 +290,11 @@
       <div class="owl-carousel owl-theme">
 
         <div><img src="img/screen/1.jpg" alt="img"></div>
-        <!-- <div><img src="img/screen/2.jpg" alt="img"></div>
+        <div><img src="img/screen/2.jpg" alt="img"></div>
         <div><img src="img/screen/3.jpg" alt="img"></div>
         <div><img src="img/screen/4.jpg" alt="img"></div>
-        <div><img src="img/screen/5.jpg" alt="img"></div>
-        <div><img src="img/screen/6.jpg" alt="img"></div>
+        <div><img src="img/screen/5.png" alt="img"></div>
+        <!-- <div><img src="img/screen/6.jpg" alt="img"></div>
         <div><img src="img/screen/7.jpg" alt="img"></div>
         <div><img src="img/screen/8.jpg" alt="img"></div>
         <div><img src="img/screen/9.jpg" alt="img"></div> -->
@@ -377,8 +395,7 @@
             </div>
           </div>
         </div>
-
-        <div class="col-lg-3">
+        <div class="col-md-3" style="margin-top: 30px">
           <div class="team-block bottom">
             <img src="/img/team/kien_quoc.png" class="img-responsive" alt="img">
             <div class="team-content">
@@ -415,9 +432,8 @@
 
                 <div class="carousel-item  active">
                   <div class="top-top">
-                    <h2>Something</h2>
-                    <p>Sth more.</p>
-                    <h4>Trung Tín<span>nhóm trưởng</span></h4>
+                    <h2>Phải mất hai hòn đá để tạo ra lửa</h2>
+                    <h4>Louisa May Alcott</h4>
 
                   </div>
                 </div>
@@ -425,9 +441,8 @@
                 <div class="carousel-item ">
                   <div class="top-top">
 
-                    <h2>Có người nói, khi tạo ra máy tính con người đã có tất cả</h2>
-                    <p>và đã có một cuộc cách mạng khoa học kỹ thuật mạnh mẽ. Nhưng không, khi tạo ra máy tính con người đã mất tất cả, kể cả bản thân mình.</p>
-                    <h4>Trung Nam<span>thư kí</span></h4>
+                    <h2>The strength of the team is each individual member. The strength of each member is the team</h2>
+                    <h4>Phil Jackson</h4>
 
                   </div>
                 </div>
@@ -435,10 +450,8 @@
                 <div class="carousel-item ">
                   <div class="top-top">
 
-                    <h2>Our Users Speack volumes us</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                      specimen book. It has survived not only five centuries.</p>
-                    <h4>David Spark<span>manager</span></h4>
+                    <h2>Không ai trong chúng ta thông minh hơn tất cả chúng ta.</h2>
+                    <h4>Ken Blanchard</h4>
 
                   </div>
                 </div>
