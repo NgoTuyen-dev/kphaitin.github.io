@@ -5,6 +5,7 @@ http://www.templatemo.com/tm-493-snapshot
 
 */
 
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
 
 /* Body 
 ------------------------------------- */
@@ -14,6 +15,7 @@ body {
     font-style: normal;
     font-weight: 300;
     position: relative;
+    
 }
 
 html,body {
@@ -35,9 +37,9 @@ h1,h2,h3,h4 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 3rem;
-  letter-spacing: 12px;
+  /* letter-spacing: 12px; */
   text-transform: uppercase;
   padding-bottom: 8px;
 }
@@ -57,11 +59,12 @@ h3 {
 }
 
 p {
-  color: #888;
+  /* color: #888; */
   font-size: 20px;
   letter-spacing: 1px;
   line-height: 25px;
 }
+
 
 #home p,
 #contact p, footer p {
@@ -124,6 +127,8 @@ a:hover, a:active, a:focus {
 
 .section-title {
   padding-bottom: 62px;
+  font-family: 'Bangers', cursive;
+  color: white!important;
 }
 
 #about .section-title {
@@ -153,7 +158,7 @@ a:hover, a:active, a:focus {
   opacity: 0.6;
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 470vh;
   top: 0;
   left: 0;
   right: 0;
@@ -364,7 +369,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #about {
-  background: #f0f0f0;
+  /* background: #f0f0f0; */
 }
 
 #about .item {
@@ -459,7 +464,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #gallery {
-  background: #ffffff;
+  /* background: #ffffff; */  
 }
 
 #gallery .gallery-thumb {
