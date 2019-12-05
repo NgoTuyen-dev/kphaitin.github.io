@@ -35,7 +35,7 @@ $(document).ready(function() {
         slides: [
             { src: 'images/slide-img1.jpg' },
             { src: 'images/slide-img2.jpg' },
-            { src: 'images/slide-img3.jpg' }
+            { src: 'images/slide-img3.png' }
         ],
         timer: false,
         transition: [ 'zoomIn', ],
